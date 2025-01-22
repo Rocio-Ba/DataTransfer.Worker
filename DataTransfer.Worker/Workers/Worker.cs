@@ -8,6 +8,8 @@ namespace DataTransfer.Worker.Workers
 {
     public class Worker : BackgroundService
     {
+        // Please be gentle with your comments 
+
         private readonly IDbContextFactory<SourceDbContext> _sourceDbContextFactory;
         private readonly IDbContextFactory<DestinationDbContext> _destinationDbContextFactory;
         public Worker(IDbContextFactory<SourceDbContext> sourceDbContextFactory,IDbContextFactory<DestinationDbContext> destinationDbContextFactory)
